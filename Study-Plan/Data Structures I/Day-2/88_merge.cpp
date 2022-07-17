@@ -23,14 +23,14 @@ int main(){
     nums2.push_back(5);
     nums2.push_back(6);
 
-    for(int i=0;i<nums1.size();i++)
-        cout<<nums1[i]<<" ";
+    for(auto i:nums1)
+        cout<<i<<" ";
     cout<<endl;
     
     merge(nums1,nums2,m,n);
 
-    for(int i=0;i<nums1.size();i++)
-        cout<<nums1[i]<<" ";
+    for(auto i:nums1)
+        cout<<i<<" ";
     cout<<endl;
     return 0;
 }
