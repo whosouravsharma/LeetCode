@@ -9,12 +9,31 @@ Given n, calculate F(n). */
 
 #include<iostream>
 
-int fib(int n){
+/* int fib(int n){
     int dp[2]={0,1};
     for(int i=0;i<n;i++){
         dp[i%2]+=dp[(i+1)%2];
     }
     return dp[n%2];
+}*/
+
+// reccusiron
+/* int fib(int n){
+    if(n<=1)
+        return n;
+    return fib(n-1)+fib(n-2);
+} */
+
+// bottom-up approch
+int fib(int n){
+    if(n<=1)
+        return n;
+    int cache[n]={0};
+    cache[1]=1;
+    for(int i=2;i<=n;i++){
+        cache[i]=cache[i-1]+cache[i-2];
+    }
+    return cache[n];
 }
 
 int main(){

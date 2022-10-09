@@ -1,0 +1,1 @@
+{"name":"Local: 392_isSubsequence","url":"/home/sourav/Desktop/LeetCode/392_isSubsequence.cpp","tests":[{"id":1665292373942,"input":"abc\nahbgdc","output":"1"},{"id":1665292406508,"input":"axc\nahbgdc","output":"0"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/home/sourav/Desktop/LeetCode/392_isSubsequence.cpp","group":"local","local":true}
